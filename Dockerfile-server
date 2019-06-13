@@ -1,0 +1,21 @@
+FROM node:10-alpine
+
+ENV NPM_CONFIG_LOGLEVEL=warn \
+    TZ="Europe/Oslo" \
+    APP_PATH=/src
+
+WORKDIR $APP_PATH
+
+COPY package.json package-lock.json $APP_PATH/
+
+RUN apk update && \
+    apk upgrade && \
+    apk add git python make g++
+
+RUN npm ci
+
+RUN apk del git python make g++
+
+COPY . $APP_PATH
+
+CMD npm run dev:server

@@ -1,0 +1,64 @@
+INSERT INTO category(name) VALUES('Digitale kompaktkameraer');
+INSERT INTO category(name) VALUES('Digitale systemkamera');
+INSERT INTO category(name) VALUES('Videokameraer');
+INSERT INTO category(name) VALUES('TV');
+INSERT INTO category(name) VALUES('Mobiltelefoner');
+
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Leica X-U', 'Optisk Zoom 1x, 16Mpx, 1920 x 1080, 3" Skjerm, 5bilder/sek Høyeste opptakshastighet, Manuell eksponering, Værbestandig');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Sony CyberShot DSC-RX100', '');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Canon PowerShot S200', '');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Sony Cyber-shot RX10 III', 'Optisk Zoom 25x, 20Mpx, 1", 3840 x 2160, Vridbar skjerm, 3" Skjerm, 14bilder/sek Høyeste opptakshastighet, Manuell eksponering, Værbestandig');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Sony Cyber-shot RX100 III', 'Optisk Zoom 2.9x, 20.1Mpx, 1", 1920 x 1080, Vridbar skjerm, 3" Skjerm, Manuell eksponering');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Sony Cyber-shot DSC-HX90V', 'Optisk Zoom 30x, 18.2Mpx, Kompakt, 1920 x 1080, GPS, Vridbar skjerm, 3" Skjerm, Manuell eksponering');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Panasonic Lumix LX15', 'Optisk Zoom 3x, 20Mpx, 3840 x 2160, Vridbar skjerm');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Sony Cyber-shot DSC-RX100 V', 'Optisk Zoom 2.9x, 1920 x 1080, 3" Skjerm');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Panasonic Lumix DMC-TZ60', 'Optisk Zoom 30x, 18.9Mpx, Kompakt, 1920 x 1080, GPS, 3" Skjerm');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale kompaktkameraer'), 'Canon PowerShot G12', '10Mpx, Optisk Zoom 5x, CCD, Minste brennvidde 28mm, Største brennvidde 140mm, 2.8" Skjerm, Batterikapasitet (CIPA) 370bilder per lading, Største blender (Vidvinkel) 2.8F, Største blender (Tele) 4.5F, Manuell, Auto, Optisk, Manuell, Blenderprioritet, Lukkerprioritet, Laveste ISO-verdi 80, Høyeste ISO-verdi 3200, Blitsfeste, Vridbar skjerm, Optisk, RAW-format, Dybde 4.83cm, Vekt 401g, Bilder per sekund  (høyeste oppløsning) 24');
+
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Panasonic Lumix DMC-G6', '16.05Mpx, MicroFourThirds, Speilrefleks, Videoopptak, Vekt 340g');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Nikon D800E', '36.3Mpx, Cropfaktor 1x, Nikon, Speilrefleks, 3.2" skjerm, Videoopptak, Metall, Plast, Batterikapasitet (CIPA) 900bilder per lading, Vekt 900g, Innebygd blits, Høyeste opptakshastighet 4bilder/sek');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Nikon D3x', '25.72Mpx, Nikon, Speilrefleks, 3" skjerm, Cropfaktor 1x, Metall, Batterikapasitet (CIPA) 4400bilder per lading, Vekt 1220g, Høyeste opptakshastighet 5bilder/sek');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Canon EOS M100', '24Mpx, Canon EF-M, 3" skjerm, APS-C/H, Berøringsskjerm, 6.1bilder/sek Høyeste opptakshastighet');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Canon EOS 5D Mark II', 'Speilrefleks, 22Mpx, Canon EF, 3" skjerm, Fullformat, 3.9bilder/sek Høyeste opptakshastighet, Værbestandig');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Sony Alpha a9', '24Mpx, Sony E, 3" skjerm, Fullformat, Berøringsskjerm, 20bilder/sek Høyeste opptakshastighet, Værbestandig');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Nikon D300s', 'Speilrefleks, 12.2Mpx, Nikon F, 3" skjerm, APS-C/H, 7bilder/sek Høyeste opptakshastighet, Værbestandig');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Canon EOS R', '');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Canon EOS M10', '18Mpx, Canon EF-M, 3" skjerm, APS-C/H, Berøringsskjerm, 4.6bilder/sek Høyeste opptakshastighet');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Olympus E-1', '5.5Mpx, 4/3, FourThirds, 1.8" skjerm, Autofokus, Cropfaktor 2x, Metall, Gummi, Vekt 660g, Høyeste opptakshastighet 3bilder/sek');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Digitale systemkamera'), 'Panasonic Lumix DMC-GX8', '20.3Mpx, MicroFourThirds, 3" skjerm, Four thirds, Berøringsskjerm, 8bilder/sek Høyeste opptakshastighet, Værbestandig');
+
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Samsung Galaxy S10 Plus', 'Trykkskjerm (touchscreen), Android 9.0 (Pie), 4G (LTE), 6.4 Tommer, 3700 mAh');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Samsung Galaxy S10 Lite', 'Trykkskjerm (touchscreen), Android 9.0 (Pie), 4G (LTE), 5.8 Tommer, 3300 mAh');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Samsung Galaxy X', '');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Samsung Galaxy M10', '');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Nokia 5.1 Dual SIM 32GB', '');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Nokia 4.2 32GB', '');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Huawei P20 Dual SIM 64GB', '');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'OnePlus 5T 128GB', 'Android, 6", 128GB, 4G, 20Mpx, 3300mAh, 6GB RAM, 1080 x 2160, NFC');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Motorola Moto X Play 16GB', '5.5", Android, 16GB, 4G, 3630mAh, 21Mpx, 2GB RAM, 1080 x 1920, Minnekortleser, NFC, Maks lagrinsplass (minnekort) 128GB, Akselerometer, 400.53ppi, IP52, 169g, LCD, 3.5mm jack (innebygget)');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'Nokia E75', '2.4", SymbianOS 9.x / Series 60, 1000mAh, Minnekortleser, 240 x 320, 166.67ppi, 4.2t taletid, 139g, Akselerometer, 2G, Autofokus, Digital zoom, 3.5mm jack (innebygget)');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Mobiltelefoner'), 'OnePlus 6T (6GB RAM) 128GB', '');
+
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'LG 65EG960V', '65", Ultra HD (4K), OLED, HDR, Smart TV, 3D-støtte, Kurvet');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'LG 65UF950V', '65", Ultra HD (4K), Smart TV, LCD, WebOS, 3840 x 2160');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Samsung UE55KS7005', '55", Ultra HD (4K), LCD, HDR, Smart TV, A+');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Sony Bravia XD83', '43"');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Philips 55PUS7600', '55", Ultra HD (4K), LCD, Smart TV, 3D-støtte');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Panasonic TX-65DX900', '65", Ultra HD (4K), LCD, HDR, Smart TV, 3D-støtte');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Sony Bravia KD-43XD8005', '43", LCD, Ultra HD (4K), 3840 x 2160, 16:9');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Samsung UE55KS8005', '55", Ultra HD (4K), HDR, Smart TV');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Samsung UE65JS9505', '65", Ultra HD (4K), Smart TV, 3D-støtte, HDR, Tizen, 3840 x 2160, Kurvet, 16:9');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Sony KD-55X8505C', '55", Ultra HD (4K), LCD, Smart TV, 3D-støtte');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'TV'), 'Samsung Serif TV', '40", Ultra HD (4K), Smart TV');
+
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'Tomtom Bandit Actionkamera', 'Skjermstørrelse 0.87", Vekt 190g');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'GoPro Hero4 Black', '4K Ultra HD (3840 x 2160), Fjernstyring fra mobiltelefon, Batterilevetid 90min, USB, HDMI, 12Mpx, Vanntett ned til 40m, Støtsikker, Timelapse, SD, Synsvinkel 139°, Vekt 88g');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'LG 360 Cam', '2560 x 1440, Værbestandig, Bilder per sekund  (høyeste oppløsning) 30, Bluetooth, micro-USB, WiFi');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'Garmin Virb Ultra 30', '4K Ultra HD (3840 x 2160), USB, 12Mpx, Timelapse, microSD, microSDHC, MicroSDXC, Skjermstørrelse 1.75", Berøringsskjerm');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'Contour ROAM', 'Full HD (1920 x 1080), Minnebrikke, 5Mpx, Vekt 144.5g');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'Canon XF300', 'Full HD (1080p), 1920 x 1080, SD, CMOS, Digital zoom 1.5x, Bilder per sekund (høyeste oppløsning) 50bilder/sek, Optisk Zoom 18x, Effektiv oppløsning (stillbilde) 2.37Mpx');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'Contour Plus 2', 'Full HD (1920 x 1080), 5Mpx, Geotagging, SDHC, Micro SD, Vekt 156g');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'Contour ROAM 3', 'Full HD (1920 x 1080), Micro SD');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'Ricoh Theta S', '1920 x 1080, Stillbildeoppløsning 14Mpx, Bilder per sekund  (høyeste oppløsning) 30, micro-USB, micro-HDMI, WiFi, Internt minne');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'Ricoh WG-M2', '4K Ultra HD (3840 x 2160), Vanntett uten undervannshus, Fjernstyring fra mobiltelefon, Batterilevetid 80min, USB, HDMI, Wi-Fi, 8Mpx, Vanntett ned til 20m, Elektronisk, Støtsikker, microSD, microSDHC, Micro SD, Skjermstørrelse 1.5", Synsvinkel 204°, Blenderåpning 2f/, Vekt 136g');
+INSERT INTO product(category_id, name, description) VALUES((SELECT id FROM category WHERE name = 'Videokameraer'), 'DJI Osmo Action', '');
