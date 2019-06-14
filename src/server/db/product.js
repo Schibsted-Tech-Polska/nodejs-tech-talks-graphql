@@ -6,6 +6,13 @@ const fetchByCategoryId = categoryId =>
         .from('product')
         .where({ category_id: categoryId });
 
+const fetchByCategoryIds = categoryIds =>
+    knex
+        .select('*')
+        .from('product')
+        .whereIn('category_id', categoryIds);
+
 module.exports = {
     fetchByCategoryId,
+    fetchByCategoryIds,
 };
