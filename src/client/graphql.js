@@ -1,13 +1,16 @@
 import { ApolloClient } from 'apollo-client';
 import { InMemoryCache } from 'apollo-cache-inmemory';
-import { HttpLink } from 'apollo-link-http';
+import { createHttpLink } from 'apollo-link-http';
+import { ApolloLink } from 'apollo-link';
+import { createPersistedQueryLink } from 'apollo-link-persisted-queries';
 import gql from 'graphql-tag';
 import config from './config';
 
 const cache = new InMemoryCache();
-const link = new HttpLink({
-    uri: config.graphql.uri,
-});
+const link = ApolloLink.from([
+    createPersistedQueryLink({ useGETForHashedQueries: true }),
+    createHttpLink({ uri: config.graphql.uri }),
+]);
 
 const client = new ApolloClient({
     cache,
