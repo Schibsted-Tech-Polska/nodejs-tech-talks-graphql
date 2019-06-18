@@ -12,9 +12,7 @@
     "dev:server": "DEBUG=knex:query nodemon src/server/index.js | bunyan -o short",
     "dev:client": "webpack-dev-server --config webpack.config.js --host 0.0.0.0 --hot --inline",
     "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
-    "start:server": "node src/server/index.js",
-    "start:client": "node src/client/server.js"
+    "lint-fix": "eslint . --fix"
   },
   "lint-staged": {
     "*.js": [
