@@ -2,7 +2,7 @@ module.exports = `
     type Category {
       id: ID!
       name: String
-      products: [Product]
+      products: [Product] @cacheControl(maxAge: 60)
     }
     
     type Product {
