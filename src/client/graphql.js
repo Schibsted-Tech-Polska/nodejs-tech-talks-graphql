@@ -7,10 +7,13 @@ import gql from 'graphql-tag';
 import config from './config';
 
 const cache = new InMemoryCache();
-const link = ApolloLink.from([
-    createPersistedQueryLink({ useGETForHashedQueries: true }),
-    createHttpLink({ uri: config.graphql.uri }),
-]);
+let linkComponents = [createHttpLink({ uri: config.graphql.uri })];
+
+if (config.graphql.persistedQueries) {
+    linkComponents = [createPersistedQueryLink({ useGETForHashedQueries: true }), ...linkComponents];
+}
+
+const link = ApolloLink.from(linkComponents);
 
 const client = new ApolloClient({
     cache,

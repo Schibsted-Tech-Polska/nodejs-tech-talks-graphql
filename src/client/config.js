@@ -1,6 +1,7 @@
 export default {
     graphql: {
         uri: 'http://localhost:3000/graphql',
+        persistedQueries: false,
         defaultOptions: {
             watchQuery: {
                 fetchPolicy: 'no-cache',
