@@ -12,6 +12,6 @@ module.exports = `
     }
     
     type Query {
-      categories: [Category]!
+      categories: [Category]! @cacheControl(maxAge: 3600)
     }
 `;
