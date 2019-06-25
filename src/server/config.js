@@ -23,5 +23,8 @@ module.exports = {
             max: 10,
         },
     },
+    graphql: {
+        defaultMaxAge: 600,
+    },
     defaultPort: 3000,
 };
