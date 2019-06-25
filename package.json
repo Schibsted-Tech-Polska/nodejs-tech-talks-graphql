@@ -32,6 +32,7 @@
     "apollo-link-http": "^1.5.14",
     "apollo-link-persisted-queries": "^0.2.2",
     "apollo-server-koa": "^2.6.3",
+    "apollo-server-plugin-response-cache": "^0.2.2",
     "bunyan": "^1.8.12",
     "dataloader": "^1.4.0",
     "eslint-plugin-babel": "^5.3.0",
