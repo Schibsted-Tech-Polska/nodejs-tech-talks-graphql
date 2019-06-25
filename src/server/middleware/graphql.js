@@ -1,6 +1,7 @@
 const { ApolloServer } = require('apollo-server-koa');
 const responseCachePlugin = require('apollo-server-plugin-response-cache');
 const { typeDefs, resolvers } = require('../graphql');
+const config = require('../config');
 
 module.exports = new ApolloServer({
     typeDefs,
@@ -11,4 +12,7 @@ module.exports = new ApolloServer({
         },
     },
     plugins: [responseCachePlugin()],
+    cacheControl: {
+        defaultMaxAge: config.graphql.defaultMaxAge,
+    },
 });

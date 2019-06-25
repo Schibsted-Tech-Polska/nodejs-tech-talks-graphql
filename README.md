@@ -6,7 +6,8 @@ This is demo app that shows how to use GraphQL with:
 - [Cache hints](https://www.apollographql.com/docs/apollo-server/features/caching)
 
 ## How to use it
-Use [Docker](https://docs.docker.com/install/) to set it up: `docker-compose up`.
+First install required dependencies locally using `npm ci`.
+Then use [Docker](https://docs.docker.com/install/) to start everything up: `docker-compose up`.
 It will setup Postgres database with initial schema and data, server app and client app.
 
 ### http://localhost:3000 - Server app

@@ -2,7 +2,7 @@ module.exports = `
     type Category {
       id: ID!
       name: String
-      products: [Product]
+      products: [Product] @cacheControl(maxAge: 60)
     }
     
     type Product {
@@ -12,6 +12,6 @@ module.exports = `
     }
     
     type Query {
-      categories: [Category]!
+      categories: [Category]! @cacheControl(maxAge: 3600)
     }
 `;
