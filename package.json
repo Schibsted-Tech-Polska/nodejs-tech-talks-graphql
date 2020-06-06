@@ -31,7 +31,7 @@
     "apollo-link": "^1.2.13",
     "apollo-link-http": "^1.5.16",
     "apollo-link-persisted-queries": "^0.2.2",
-    "apollo-server-koa": "^2.9.8",
+    "apollo-server-koa": "^2.14.2",
     "apollo-server-plugin-response-cache": "^0.3.5",
     "bunyan": "^1.8.12",
     "dataloader": "^1.4.0",
